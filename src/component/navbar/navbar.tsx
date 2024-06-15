@@ -36,7 +36,11 @@ export function Navbar() {
               className={styles.menuButton}
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+              {menuOpen ? (
+                <X size={28} color="black" />
+              ) : (
+                <Menu size={28} color="black" />
+              )}
             </button>
           </div>
         </div>

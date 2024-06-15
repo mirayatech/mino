@@ -70,7 +70,7 @@
 }
 
 .getAppButton {
-  color: var(--color-dark);
+  color: var(--color-dark-gray-text);
   background-color: var(--color-neon);
   height: 44px;
   width: 150px;
@@ -89,6 +89,16 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .navbar {
+    height: 60px;
+    display: flex;
+    padding: 0 24px;
+  }
+
+  .navbarMobile {
+    height: 60px;
+    padding: 0 24px;
+  }
   .navbar .links,
   .navbarMobile .links {
     display: none;
@@ -100,7 +110,7 @@
   }
 
   .getAppButton {
-    color: var(--color-dark);
+    color: var(--color-dark-gray-text);
     background-color: var(--color-neon);
     height: 38px;
     width: 120px;
@@ -146,11 +156,12 @@
 
   .getAppButtonMenu {
     width: 100%;
-    color: var(--color-dark);
+    color: var(--color-dark-gray-text);
     background-color: var(--color-neon);
-    height: 44px;
+    height: 60px;
     font-size: 1rem;
     border-radius: 30px;
     transition: all 0.2s ease;
+    margin-bottom: 100px;
   }
 }

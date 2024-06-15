@@ -1,0 +1,153 @@
+.hero {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 92.5vh;
+}
+
+.hero h1 {
+  line-height: 1.1;
+  max-width: 700px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: calc(60 / 16 * 1rem);
+  color: var(--color-dark-gray-text);
+}
+
+.hero h2 {
+  font-size: 1rem;
+  max-width: 330px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--color-meduim-gray-text);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: black;
+}
+
+.buttons button img {
+  width: 110px;
+  border-radius: 30px;
+}
+
+.images {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.images img {
+  max-width: 30%;
+}
+
+.images img {
+  max-width: 30%;
+}
+
+@media screen and (max-height: 1180px) {
+  .images img {
+    max-width: 25%;
+  }
+
+  .images img {
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-height: 1024px) {
+  .images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .images img {
+    max-width: 20%;
+  }
+
+  .images img {
+    max-width: 20%;
+  }
+
+  .hero {
+    height: 105vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero h1 {
+    max-width: 550px;
+    font-size: calc(50 / 16 * 1rem);
+  }
+
+  .hero h2 {
+    max-width: 300px;
+  }
+
+  .buttons button {
+    padding: 5px 10px;
+  }
+
+  .buttons button img {
+    width: 100px;
+  }
+  .images {
+    margin-top: 50px;
+  }
+  .images img {
+    max-width: 40%;
+  }
+
+  .images img {
+    max-width: 40%;
+  }
+
+  .hero {
+    height: 93vh;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .hero h1 {
+    max-width: 320px;
+    font-size: calc(30 / 16 * 1rem);
+  }
+
+  .buttons button {
+    padding: 5px 10px;
+  }
+
+  .buttons button img {
+    width: 90px;
+  }
+  .images {
+    margin-top: 50px;
+  }
+  .images img {
+    max-width: 42%;
+  }
+
+  .images img {
+    max-width: 42%;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-height: 548px) {
+  .hero {
+    min-height: 98vh;
+  }
+}

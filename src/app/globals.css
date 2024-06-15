@@ -1,9 +1,10 @@
 :root {
   --color-black: #000000;
-  --color-dark: #171717;
+  --color-dark-gray-text: #171717;
   --color-white: white;
   --color-neon: #beff6b;
   --color-purple: #7c57fd;
+  --color-meduim-gray-text: #404040;
 }
 
 * {

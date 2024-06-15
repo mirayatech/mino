@@ -1,9 +1,10 @@
-import { Navbar } from "@/component";
+import { Hero, Navbar } from "@/component";
 
 function Page() {
   return (
     <div>
       <Navbar />
+      <Hero />
     </div>
   );
 }

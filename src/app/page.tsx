@@ -1,10 +1,11 @@
-import { Hero, Navbar } from "@/component";
+import { Features, Hero, Navbar } from "@/component";
 
 function Page() {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Features />
     </div>
   );
 }

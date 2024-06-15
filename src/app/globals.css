@@ -1,10 +1,12 @@
 :root {
   --color-black: #000000;
-  --color-dark-gray-text: #171717;
+  --color-obsidian: #1c1d1e;
   --color-white: white;
   --color-neon: #beff6b;
   --color-purple: #7c57fd;
+  --color-dark-gray-text: #171717;
   --color-meduim-gray-text: #404040;
+  --color-light-gray-text: #e5e5e5;
 }
 
 * {

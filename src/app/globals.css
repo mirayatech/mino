@@ -5,14 +5,32 @@
   --color-neon: #beff6b;
   --color-purple: #7c57fd;
   --color-dark-gray-text: #171717;
-  --color-meduim-gray-text: #404040;
+  --color-medium-gray-text: #404040;
   --color-light-gray-text: #e5e5e5;
+  --color-off-white: #f5f6f8;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  color: var(--color-dark-gray-text);
+}
+
+p {
+  line-height: 1.5;
+  color: var(--color-medium-gray-text);
 }
 
 a {

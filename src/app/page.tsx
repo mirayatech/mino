@@ -1,4 +1,4 @@
-import { Features, Hero, Navbar } from "@/component";
+import { Features, Hero, HowItWorks, Navbar } from "@/component";
 
 function Page() {
   return (
@@ -6,6 +6,7 @@ function Page() {
       <Navbar />
       <Hero />
       <Features />
+      <HowItWorks />
     </div>
   );
 }

@@ -1,0 +1,275 @@
+.container {
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header .title {
+  font-size: 0.85rem;
+  padding: 8px 15px;
+  border-radius: 30px;
+  display: inline-block;
+  background-color: var(--color-neon);
+}
+
+.header h3 {
+  max-width: 450px;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--color-dark-gray-text);
+}
+
+.header p {
+  font-size: 1rem;
+  color: var(--color-medium-gray-text);
+  margin: 10px 0;
+  max-width: 500px;
+}
+
+.steps {
+  gap: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.step-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-purple);
+  border: 10px solid var(--color-off-white);
+}
+
+.step-number {
+  font-size: 0.85rem;
+  padding: 10px 0 5px;
+  color: var(--color-medium-gray-text);
+}
+
+.step p {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-dark-gray-text);
+}
+
+.wrapper:last-child .textContent {
+  order: 2;
+  margin: auto;
+}
+
+.wrapper:last-child .imageContainer {
+  order: 1;
+  margin: 0;
+}
+
+.wrapper {
+  gap: 30px;
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContent h3 {
+  line-height: 1.1;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 20px;
+  max-width: 400px;
+  color: var(--color-dark-gray-text);
+}
+
+.textContent p {
+  text-align: left;
+  margin-bottom: 20px;
+  max-width: 400px;
+  color: var(--color-medium-gray-text);
+}
+
+.featuresList {
+  /* margin-top: auto; */
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.featuresList li {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  font-weight: 500;
+}
+
+.featuresList li::before {
+  content: "✓";
+  display: flex;
+  padding: 7px 9px;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: var(--color-dark-gray-text);
+  background-color: var(--color-neon);
+}
+
+.imageContainer {
+  margin: auto;
+  width: 450px;
+  gap: 10px;
+  display: flex;
+  padding: 40px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: var(--color-off-white);
+}
+
+.imageContainer img {
+  border-radius: 5px;
+}
+
+.mainImage {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.smallImages {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.smallImages img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    gap: 100px;
+  }
+  .wrapper {
+    gap: 0px;
+    margin-top: 60px;
+    max-width: 500px;
+    margin: auto;
+    grid-template-columns: repeat(1, auto);
+  }
+  .steps {
+    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+
+  .textContent h3 {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .textContent p {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .featuresList {
+    gap: 10px;
+    margin: 10px 0 40px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .wrapper:last-child .textContent {
+    order: 1;
+    margin: inherit;
+  }
+
+  .wrapper:last-child .imageContainer {
+    order: 2;
+    margin: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    gap: 0px;
+  }
+  .steps {
+    gap: 30px;
+
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .header .title {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .header h3 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper {
+    margin-top: 60px;
+  }
+  .textContent h3 {
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    margin-bottom: 40px;
+  }
+
+  .featuresList {
+    gap: 10px;
+    margin: 10px 0 40px;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+  .featuresList {
+    gap: 10px;
+    margin: 10px 0 40px;
+  }
+
+  .featuresList li {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .featuresList li::before {
+    padding: 5px 8px;
+  }
+}

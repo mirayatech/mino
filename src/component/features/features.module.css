@@ -1,7 +1,7 @@
 .container {
   gap: 30px;
   display: grid;
-  padding: 40px;
+  padding: 20px;
   align-items: center;
   justify-content: center;
   background-color: var(--color-black);
@@ -153,7 +153,7 @@
     width: 240px;
   }
   .container {
-    grid-template-columns: repeat(1, 310px);
+    grid-template-columns: repeat(1, 320px);
   }
 
   .section:first-child .imageContainer img:first-child {

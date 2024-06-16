@@ -225,7 +225,6 @@
   }
   .steps {
     gap: 30px;
-
     grid-template-columns: repeat(1, auto);
   }
 
@@ -235,7 +234,7 @@
   }
 
   .header h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .wrapper {
@@ -244,7 +243,7 @@
   .textContent h3 {
     max-width: 100%;
     margin-bottom: 5px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .header p {
